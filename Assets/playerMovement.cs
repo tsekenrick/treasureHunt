@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class playerMovement : MonoBehaviour {
-
+    public float moveSpeed;
 	// Use this for initialization
 	void Start () {
         
@@ -12,24 +12,24 @@ public class playerMovement : MonoBehaviour {
 	void Update () {
         if (Input.GetKey(KeyCode.W))
         {
-            transform.position += new Vector3(0, 0, 10f * Time.deltaTime);
+            transform.Translate(0, 0, moveSpeed * Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            transform.position += new Vector3(0, 0, -10f * Time.deltaTime) ;
+            transform.Translate(0, 0, -moveSpeed * Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            transform.eulerAngles += new Vector3(0, -60f * Time.deltaTime, 0);
+            transform.eulerAngles += new Vector3(0, -90f * Time.deltaTime, 0);
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            transform.eulerAngles += new Vector3(0, 60f * Time.deltaTime, 0);
+            transform.eulerAngles += new Vector3(0, 90f * Time.deltaTime, 0);
         }
 
-        Camera.main.transform.position = transform.position + new Vector3(0, 8f, -5f);
+        Camera.main.transform.position = transform.position + new Vector3(0, 8f, -6.5f);
     }
 }
