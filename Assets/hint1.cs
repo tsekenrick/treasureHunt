@@ -14,7 +14,7 @@ public class hint1 : MonoBehaviour {
 	void Update () {
 	if ((transform.position - player.transform.position).magnitude < 8f)
         {
-            hint.text = "You are at the lighthouse.\n Head west until you reach the capsule.";
+            hint.text = "You are at the lighthouse.\n Head west until you reach the buoy.";
         } else
         {
             hint.text = "";

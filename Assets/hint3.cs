@@ -17,7 +17,7 @@ public class hint3 : MonoBehaviour {
     {
         if ((transform.position - player.transform.position).magnitude < 8f)
         {
-            hint.text = "You are at the cube.\n Head east until you reach the tower.";
+            hint.text = "You are at the driftwood.\n Head east until you reach the tower.";
         }
         else
         {

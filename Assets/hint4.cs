@@ -16,7 +16,7 @@ public class hint4 : MonoBehaviour {
     {
         if ((transform.position - player.transform.position).magnitude < 8f)
         {
-            hint.text = "You are at the tower.\n Head north until you reach your long forgotten gold.";
+            hint.text = "You are at the tower.\n Head north until you reach your salvation.";
         }
         else
         {

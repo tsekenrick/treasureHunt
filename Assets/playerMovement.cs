@@ -30,6 +30,6 @@ public class playerMovement : MonoBehaviour {
             transform.eulerAngles += new Vector3(0, 90f * Time.deltaTime, 0);
         }
 
-        Camera.main.transform.position = transform.position + new Vector3(0, 8f, -6.5f);
+        Camera.main.transform.position = transform.position + new Vector3(0, 8f, -9f);
     }
 }

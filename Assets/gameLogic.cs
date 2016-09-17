@@ -16,10 +16,10 @@ public class gameLogic : MonoBehaviour {
 	void Update () {
         if (victory)
         {
-            vicText.text = "YOU GOT THE TREASURE AND YOU WIN!";
+            vicText.text = "YOU FOUND LAND AND SAVED YOUR CREW!";
         } else if ((player.transform.position - transform.position).magnitude < 5f)
         {
-            vicText.text = "Press [Space] to get treasure!";
+            vicText.text = "Land ho! Press [SPACE] to dock!";
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
                 victory = true;
